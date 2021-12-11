@@ -1,0 +1,12 @@
+Augmentor
+discord.py
+numpy
+aiohttp
+pillow
+pytz
+platform
+asyncio
+pathlib
+os
+random
+shutil
