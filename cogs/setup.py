@@ -85,6 +85,14 @@ class Setup(commands.Cog):
         await self.open_settings(ctx.guild.id)
         await self.update_settings(ctx.guild.id, "False", "Status")
         await ctx.send(f"The Captcha System has been disabled!")
+    @commands.command()
+    @commands.has_permissions(administrator=True)
+    @commands.guild_only()
+    async def enable(self, ctx):
+        """Disable the captcha System"""
+        await self.open_settings(ctx.guild.id)
+        await self.update_settings(ctx.guild.id, "True", "Status")
+        await ctx.send(f"The Captcha System has been enabled!")
     
         
 
